@@ -84,4 +84,184 @@
   background-color: #4CAF50;
   color: white;
   padding: 0.75rem 1.5rem;
-  border:
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.playersSection {
+  margin-top: 2rem;
+}
+
+.playersSection h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.playerGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.playerCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.playerCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.playerCard h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 0.5rem;
+}
+
+.stats {
+  margin: 1rem 0;
+}
+
+.sport {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+.sport h4 {
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.sport p {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.editButton {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.editButton:hover {
+  background-color: #1976D2;
+}
+
+.deleteButton {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.statsEdit {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.statsEdit h4 {
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.statsEdit label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.statsEdit input {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.saveButton {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.saveButton:hover {
+  background-color: #45a049;
+}
+
+.cancelButton {
+  padding: 0.5rem 1rem;
+  background-color: #757575;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancelButton:hover {
+  background-color: #616161;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .playerGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .addPlayerSection {
+    padding: 1.5rem;
+  }
+}
