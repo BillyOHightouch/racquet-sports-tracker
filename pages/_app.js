@@ -1,7 +1,6 @@
-// pages/_app.tsx or pages/_app.js
-import '@/styles/globals.css'; // or '../styles/globals.css' if you don't have a tsconfig path alias
+// pages/_app.js
+import '../styles/globals.css'; // use relative path unless you’ve set a @ alias
 
-import type { AppProps } from 'next/app';
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
