@@ -31,44 +31,4 @@ export default function Home() {
     }
   };
 
-  const handleAddPlayer = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('/api/players', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newPlayer)
-      });
-      
-      if (!response.ok) throw new Error('Failed to add player');
-      
-      await fetchPlayers();
-      setNewPlayer({
-        name: '',
-        table_tennis_wins: 0,
-        table_tennis_losses: 0,
-        pickleball_wins: 0,
-        pickleball_losses: 0
-      });
-    } catch (err) {
-      setError(err.message);
-    }
-  };
-
-  const handleUpdatePlayer = async (playerId, updatedData) => {
-    try {
-      const response = await fetch(`/api/players/${playerId}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(updatedData)
-      });
-      
-      if (!response.ok) throw new Error('Failed to update player');
-      
-      await fetchPlayers();
-      setEditingPlayer(null);
-    } cat
+  co
